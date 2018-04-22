@@ -45,6 +45,5 @@ RUN mkdir -p /root/.android && \
   touch /root/.android/repositories.cfg && \
   ${ANDROID_HOME}/tools/bin/sdkmanager --update 
 
-RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done 
-    /sdk/packages.txt && \
-    ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES}
+RUN while read -r package; do PACKAGES="${PACKAGES}${package} "; done /sdk/packages.txt && \
+  ${ANDROID_HOME}/tools/bin/sdkmanager ${PACKAGES}
