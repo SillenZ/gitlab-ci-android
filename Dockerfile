@@ -52,9 +52,9 @@ ENV GOOGLE_COMPONENTS "extras;android;m2repository" \
                       "extras;google;m2repository" \
                       "extras;google;google_play_services" 
                        
-ENV CONSTRAINT_LAYOUT "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.0-beta4"\ 
-"extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.0-beta4"\
-"extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"\
+ENV CONSTRAINT_LAYOUT "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.0-beta4" \ 
+"extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.0-beta4" \
+"extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2" \
 "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
 
 RUN mkdir -p ${ANDROID_HOME}/licenses/ && \
