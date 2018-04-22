@@ -6,8 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN dpkg --add-architecture i386 && \
     apt-get -qq update && \
     apt-get -qqy install --no-install-recommends \
-       libc6:i386 libstdc++6:i386 zlib1g:i386 libncurses5:i386 tar 
-git curl && \
+    libc6:i386 libstdc++6:i386 zlib1g:i386 libncurses5:i386 tar git curl && \
     apt-get clean && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/*
